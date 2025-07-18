@@ -5,44 +5,44 @@
   color: white;
 }
 
-body,
-html {
-  height: 100%;
-  width: 100%;
-}
-
-#bg {
+body {
   height: 100%;
   width: 100%;
   background-color: rgb(24, 23, 23);
-  z-index: -1;
-  position: relative;
 }
 
-.intro {
-  width: 100%;
+#bg {
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  text-align: center;
   word-spacing: 0.3rem;
-  top: 4rem;
   color: white;
-  position: relative;
   line-height: 2.2rem;
-  margin-bottom: 5rem;
-  font-family: "Kanit", sans-serif;
+  margin-bottom: 4rem;
+  font-family: 'Kanit', sans-serif;
+}
+
+#role{
+  line-height: 1.4rem;
 }
 
 .mainContainer {
-  max-width: 1200px;
-  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
+  gap: 1.5rem;
 }
 
 #profile {
@@ -54,7 +54,7 @@ html {
   overflow: hidden;
   border-radius: 50%;
   border: 0.2em solid white;
-  margin-top: 2.5em;
+  /* margin-top: 2.5em; why extra space ? */
 }
 
 #profile img {
@@ -66,6 +66,7 @@ html {
 
 #info {
   display: flex;
+  align-items: center;
   justify-content: center;
   flex-direction: column;
   position: relative;
@@ -74,15 +75,26 @@ html {
 
 .icons {
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   gap: 1rem;
+  /* padding: 8px;
+  border-radius: 8px;
+  border: 2px solid white; checkout here for extra look ! */
 }
 
 .icon {
+  outline: 0;
+  border: 0;
+  cursor: pointer;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  }
+  background-color: transparent;
+  font-weight: 700;
+}
 
 .i {
   height: 2.4rem;
@@ -94,8 +106,9 @@ html {
   padding: 0.2rem;
 }
 
-#display{
-    background-color:white;
-    height:21rem;
-    margin-top:1.7rem;
+#display {
+  background-color: white;
+  height: 21rem;
+  width: 100%;
+  margin-top: 1.7rem;
 }
